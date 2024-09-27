@@ -2,7 +2,7 @@
 Micropython code for the Walkman project on Printables
 
 ## Introduction
-This repo was made to share the python source code for my [Digital Walkman Project]("https://www.printables.com/model/866022-walkman-inspired-mp3-player") over on [Printables]("www.printables.com")
+This repo was made to share the python source code for my Digital Walkman Project over on [Printables]("https://www.printables.com/model/866022-walkman-inspired-mp3-player")
 
 It is not under active development, but if there is an issue I will try my best to fix it.
 
@@ -30,8 +30,10 @@ All button pins are set up for normally open buttons and should short with 3v3
 - ```GPIO 15``` - Volume down button
 - ```GPIO 17``` - On-Line/mode button
 
+The input and output pins are interchangeable, but watch out for the UART and i2c wires, as only certain pins on the Pico can be used for these
+
 ### Firmware
-Set up your Pico for Micropython using the [documentation]("www.micropython.org/download").
+Set up your Pico for Micropython using the [documentation]("www.micropython.org/download").         
 
 ### OLED
 If you would like to use an OLED display just copy `main.py`, `settings.txt`, `ssd.py` and `dfdriver.py` over to your Pico, and change the relevant values, if you arent't using the same pins as I am.
